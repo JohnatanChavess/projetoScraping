@@ -10,14 +10,10 @@ Este projeto é uma solução em Python para monitoramento de preços de tênis 
 
 A arquitetura do projeto é baseada em uma pipeline ETL (Extração, Transformação e Carga) desenvolvida em Python:
 
-- **Extração:** Utilizamos o [Scrapy](https://scrapy.org/) para realizar o Web Scraping e extrair os dados dos produtos.
+- **Extração:** Utilizei o [Scrapy](https://scrapy.org/) para realizar o Web Scraping e extrair os dados dos produtos.
 - **Transformação:** Os dados extraídos são processados e transformados utilizando o [Pandas](https://pandas.pydata.org/) para análise e limpeza.
 - **Carga:** Os dados transformados são armazenados em um banco de dados [SQLite3](https://www.sqlite.org/index.html) e carregados para visualização.
-- **Dashboard:** Criamos um painel interativo com o [Streamlit](https://streamlit.io/) para exibir os dados e insights gerados.
-
-## Estrutura de Diretórios
-
-A estrutura de diretórios do projeto é a seguinte:
+- **Dashboard:** Criei um painel interativo com o [Streamlit](https://streamlit.io/) para exibir os dados e insights gerados.
 
 ## Estrutura de Diretórios
 
