@@ -19,15 +19,50 @@ A arquitetura do projeto é baseada em uma pipeline ETL (Extração, Transforma�
 
 A estrutura de diretórios do projeto é a seguinte:
 
+projetoScraping/
+│
+├── src/
+│ ├── coleta/
+│ │ ├── spiders/
+│ │ │ └── mercadolivre.py
+│ │ └── settings.py
+│ └── transformacao/
+│ └── main.py
+│
+├── data/
+│ └── data.jsonl
+│
+├── notebooks/
+│ └── exploracao_dados.ipynb
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 
-1- Para rodar o web scraping 
+## Como Usar
 
-" Bash 
+### 1. Rodar o Web Scraping
+
+Para iniciar o processo de coleta de dados com o Scrapy, utilize o seguinte comando Bash:
+
 scrapy crawl mercadolivre -o ../../data/data.jsonl
-"
 
-2- Para rodar o pandas tem que escrever no terminal na pasta SRC
+Este comando executa o spider do Scrapy e salva os dados extraídos no arquivo data.jsonl localizado na pasta data que está um nível acima da pasta atual.
 
-"bash
- python transformacao/main.py "
+### 2. Rodar o Pandas
+
+Para processar e transformar os dados coletados, execute o script Python que realiza as operações necessárias com Pandas. Certifique-se de estar no diretório `src` antes de executar o comando:
+
+cd src
+python transformacao/main.py
+
+### 3. Visualizar o Dashboard
+
+Para visualizar o dashboard, utilize o Streamlit. Certifique-se de estar no diretório onde o script `app.py` está localizado e execute o comando:
+
+cd src/dashboard
+streamlit run app.py
+
+
+
