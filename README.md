@@ -6,6 +6,6 @@ Para rodar o web scraping
 scrapy crawl mercadolivre -o ../../data/data.jsonl
 ´´´
 
-2- Para rodar o pandas r no terminal na pasta SRC
+2- Para rodar o pandas, no terminal na pasta SRC
 
 '''bash python transformacao/main.py '''
