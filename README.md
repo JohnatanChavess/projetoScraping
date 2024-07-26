@@ -19,25 +19,26 @@ A arquitetura do projeto é baseada em uma pipeline ETL (Extração, Transforma�
 
 A estrutura de diretórios do projeto é a seguinte:
 
-projetoScraping/
-│
-├── src/
-│ ├── coleta/
-│ │ ├── spiders/
-│ │ │ └── mercadolivre.py
-│ │ └── settings.py
-│ └── transformacao/
-│ └── main.py
-│
-├── data/
-│ └── data.jsonl
-│
-├── notebooks/
-│ └── exploracao_dados.ipynb
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
+## Estrutura de Diretórios
+
+A estrutura de diretórios do projeto é a seguinte:
+
+- `projetoScraping/`
+  - `src/`
+    - `coleta/`
+      - `spiders/`
+        - `mercadolivre.py`
+      - `settings.py`
+    - `transformacao/`
+      - `main.py`
+  - `data/`
+    - `data.jsonl`
+  - `notebooks/`
+    - `exploracao_dados.ipynb`
+  - `.gitignore`
+  - `README.md`
+  - `requirements.txt`
+
 
 
 ## Como Usar
